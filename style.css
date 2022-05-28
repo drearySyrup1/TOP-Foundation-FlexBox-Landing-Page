@@ -38,6 +38,18 @@ body {
     color: #F9FAF8;
 }
 
+
+.header h1 {
+    margin-right: 20px;
+
+}
+
+@media (max-width: 837px) {
+    .header h1 {
+        margin-bottom: 30px;
+    }
+}
+
 .top {
     display: flex;
     justify-content: space-between;
@@ -57,6 +69,21 @@ body {
 
 .top li {
     cursor: pointer;
+}
+
+.top li a {
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: border 0.2s;
+}
+
+.top li a:hover {
+    border: 1px solid white;
+    
 }
 
 .below {
@@ -84,6 +111,12 @@ body {
     margin-top: 15px;
     color: white;
     font-weight: bold;
+    transition: box-shadow .2s;
+    cursor: pointer;
+}
+
+.below button:hover {
+    box-shadow: 0 0 10px 2px rgba(0, 98, 255, 0.4);
 }
 
 .left {
@@ -207,4 +240,12 @@ body {
 .footer a:hover {
     background-color: white;
     color: #1F2937;
+}
+
+img {
+    transition: all .2s;
+}
+
+img:hover {
+    opacity: 0.8;
 }
